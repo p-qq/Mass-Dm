@@ -30,7 +30,8 @@ def anal():
 
     except KeyboardInterrupt:
         sys.exit()
-
+Token = input(f"Token:{r} ")
+clear()
 @client.event
 async def on_ready():
     os.system(f'title MassDm - Authorized: [{client.user.name}#{client.user.discriminator}]')
@@ -47,4 +48,4 @@ async def on_ready():
             os.system(f'title MassDm - Sent: [{count}] Dm │ User: [{user.name}] │ ID: [{user.id}]')
         except:
             print(f"{r}[{R}STATUS{r}] [{R}{user.name}{r}] | {R}Failed{r}")
-client.run("ur shitty token", bot=False)
+client.run(Token, bot=False)
