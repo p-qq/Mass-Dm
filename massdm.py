@@ -30,6 +30,7 @@ def anal():
 
     except KeyboardInterrupt:
         sys.exit()
+anal()
 Token = input(f"Token:{r} ")
 clear()
 @client.event
